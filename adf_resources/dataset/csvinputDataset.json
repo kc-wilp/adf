@@ -1,0 +1,24 @@
+{
+	"name": "csvinputDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "export.csv",
+				"folderPath": "input",
+				"container": "devdemocontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

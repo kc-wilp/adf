@@ -1,0 +1,24 @@
+{
+	"name": "outPutdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "output.csv",
+				"folderPath": "output",
+				"container": "devdemocontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
