@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfDevkc11"
 		},
+		"ls_kv_dev_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demoKVkc.vault.azure.net/"
+		},
+		"ls_blobStorage_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "blobstoragedevkcConnectionstr"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +41,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"ls_kv_dev_properties_typeProperties_baseUrl": {
+						"value": "[parameters('ls_kv_dev_properties_typeProperties_baseUrl')]"
+					},
+					"ls_blobStorage_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('ls_blobStorage_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},

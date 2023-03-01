@@ -4,6 +4,12 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adfDevkc11"
+		},
+		"ls_kv_dev_properties_typeProperties_baseUrl": {
+			"value": "https://demoKVkc.vault.azure.net/"
+		},
+		"ls_blobStorage_properties_typeProperties_connectionString_secretName": {
+			"value": "blobstoragedevkcConnectionstr"
 		}
 	}
 }
